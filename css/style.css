@@ -15,9 +15,7 @@ body,
 
 body {
   min-height: 100vh;
-  background-color: #e5e5f7;
-  background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 10px 10px, linear-gradient(#6794E0 0.8px, transparent 0.8px) 0 -0.4px, linear-gradient(90deg, #6794E0 0.8px, #e5e5f7 0.8px) -0.4px 0;
-  background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
+  background-color: #061838;
 }
 
 .container {
@@ -76,9 +74,9 @@ body {
   height: 50%;
   background: var(--clr);
   transform-origin: bottom right;
-  transform: rotate(calc(45deg * var(--i)));
-  -webkit-clip-path: polygon(0 0, 56% 0, 100% 100%, 0 56%);
-          clip-path: polygon(0 0, 56% 0, 100% 100%, 0 56%);
+  transform: rotate(calc(51deg * var(--i)));
+  -webkit-clip-path: polygon(0 0, 56% 0, 100% 100%, 0 68%);
+          clip-path: polygon(0 0, 56% 0, 100% 100%, 0 68%);
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
