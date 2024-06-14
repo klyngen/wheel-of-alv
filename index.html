@@ -26,6 +26,7 @@
 		</div>
 	</div>
 	<script>
+
 		function findSpinningValue() {
 			let value = Math.ceil(Math.random() * 3600);
 
@@ -37,9 +38,29 @@
 			
 		}
 
+		function findSpinningValueRigged() {
+			const riggedFactor = 0.8;
+			let value = Math.ceil(1 * 3570);
+
+			while (value < 360*3) {
+				value = Math.ceil(1 * 3570);
+			}
+
+			return value;
+			
+		}
+
+		const chooseFunction = () => {
+			const searchString = window.location.search;
+			if (searchString.length > 0) {
+				return findSpinningValueRigged;
+			}
+			return findSpinningValue;
+		}
+
 		let wheel = document.querySelector('.wheel');
 		let spin__btn = document.querySelector('.spin__btn');
-		let value = findSpinningValue();
+		let value = findSpinningValueRigged();
 
 		spin__btn.onclick = function(){
 			wheel.style.transform = "rotate(" +value + "deg)"
