@@ -74,9 +74,9 @@ body {
   height: 50%;
   background: var(--clr);
   transform-origin: bottom right;
-  transform: rotate(calc(51deg * var(--i)));
-  -webkit-clip-path: polygon(0 0, 56% 0, 100% 100%, 0 68%);
-          clip-path: polygon(0 0, 56% 0, 100% 100%, 0 68%);
+  transform: rotate(calc(30deg * var(--i)));
+  -webkit-clip-path: polygon(0 0, 50% 0, 100% 100%, 0 50%);
+          clip-path: polygon(0 0, 40% 0, 100% 100%, 0 40%);
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;

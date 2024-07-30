@@ -18,16 +18,14 @@
 		<div class="wheel">
 			<div class="number" style="--i:1;--clr:#daa520"><span>❓ Mysterybox</span></div>
 			<div class="number" style="--i:2;--clr:#20b2aa"><span>🎟️ Flaxlodd</span></div>
-			<div class="number" style="--i:3;--clr:#daa520"><span>❓ Mysterybox</span></div>
-			<div class="number" style="--i:4;--clr:#8dc242"><span>➰ Spin igjen</span></div>
-			<div class="number" style="--i:5;--clr:#daa520"><span>❓ Mysterybox</span></div>
-			<div class="number" style="--i:6;--clr:#20b2aa"><span>🎟️ Flaxlodd</span></div>
-			<div class="number" style="--i:7;--clr:#daa520"><span>❓ Mysterybox</span></div>
+			<div class="number" style="--i:3;--clr:#8dc242"><span>➰ Spin igjen</span></div>
+			<div class="number" style="--i:4;--clr:#daa520"><span>❓ Mysterybox</span></div>
+			<div class="number" style="--i:5;--clr:#20b2aa"><span>🎟️ Flaxlodd</span></div>
+			<div class="number" style="--i:6;--clr:#daa520"><span>❓ Mysterybox</span></div>
+			<div class="number" style="--i:7;--clr:#20b2aa"><span>🎟️ Flaxlodd</span></div>
 			<div class="number" style="--i:8;--clr:#db7093"><span>🔥 Straff</span></div>
-			<div class="number" style="--i:9;--clr:#daa520"><span>❓ Mysterybox</span></div>
-			<div class="number" style="--i:10;--clr:#20b2aa"><span>🎟️ Flaxlodd</span></div>
-			<div class="number" style="--i:11;--clr:#daa520"><span>❓ Mysterybox</span></div>
-			<div class="number" style="--i:12;--clr:#20b2aa"><span>🎟️ Flaxlodd</span></div>
+			<div class="number" style="--i:9;--clr:#20b2aa"><span>🎟️ Flaxlodd</span></div>
+			<div class="number" style="--i:10;--clr:#daa520"><span>❓ Mysterybox</span></div>
 		</div>
 	</div>
 	<script>
@@ -45,10 +43,10 @@
 
 		function findSpinningValueRigged() {
 			const riggedFactor = 0.8;
-			let value = Math.ceil(1 * 3575);
+			let value = Math.ceil(1 * 3560);
 
 			while (value < 360*3) {
-				value = Math.ceil(1 * 3575);
+				value = Math.ceil(1 * 3560);
 			}
 
 			return value;
@@ -67,7 +65,7 @@
 		let spin__btn = document.querySelector('.spin__btn');
 
 		const spinFunction = chooseFunction();
-		let value = spinFunction();
+		const value = spinFunction();
 
 		spin__btn.onclick = function(){
 			wheel.style.transform = "rotate(" +value + "deg)"
